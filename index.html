@@ -2,15 +2,15 @@
 <html>
   <head>
     <title>HAMPUS HEMSIDA</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="CSS/style.css" type="text/css" rel="stylesheet">
   </head>
 
   <body>
     <div id="main-banner">
       <ul class="menu-table">
-        <li>home</li>
+        <li id="home-button">home</li>
         <li>illustrations</li>
-        <li>fonts</li>
+        <li id="fonts-button">fonts</li>
         <li>about me</li>
       </ul>
     </div>
@@ -21,14 +21,24 @@
         wilkommen<br/>
         motherfucker
       </div>
+      <canvas id="simple-sketch" width="400" height="400"></canvas>
+      <div class="tools">
+        <a href="#simple-sketch" data-download="png">
+          <button class="ui-button ui-widget ui-corner-all" id="export-button">Export</button>
+        </a>
+      </div>
     </div>
     <div id="bottom-part">
       <ul class="social-media-table">
-        <li><img src="facebook.jpg" class="icons"></img></li>
-        <li><img src="instagram.jpg" class="icons"></img></li>
-        <li><img src="tumblr.jpg" class="icons"></img></li>
+        <li><img src="Images/facebook.jpg" class="icons"></img></li>
+        <li><img src="Images/instagram.jpg" class="icons"></img></li>
+        <li><img src="Images/tumblr.jpg" class="icons"></img></li>
       </ul>
     </div>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <script src='js/main.js' type="text/javascript"></script>
   </body>
 
 </html>
